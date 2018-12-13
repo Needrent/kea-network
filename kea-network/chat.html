@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KEA Network | Chat</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="/kea-network/css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="/kea-network/img/favicon.png" rel="icon" type="image/png" />
+</head>
+<body>
+  <div id="loginPage"><!--Login Page Start-->
+   <img src="/kea-network/img/kea-network_logo.svg" class="logo" alt="KEA Network">
+   <div id="login">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Password">
+        <label for="remember">Remember me?</label>
+        <input type="checkbox" id="remember">
+        <button id="loginBtn">Login</button>
+    </div>
+   </div> <!--Login Page end-->
+    <header><!--Header Start-->
+        <a href="index.html"><img src="/kea-network/img/kea-network_logo.svg" class="logo" alt="KEA Network"></a>
+
+        <div id="sidebarIcon">&#9776;</div>
+        <div id="notefications">
+            <div id="notes"><p>1</p></div>
+        </div>
+    </header><!--Header end-->
+    <nav id="menu"><!--Menu Start-->
+        <ul>
+            <li>
+                <div id="ppContainer">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+            </li>
+            <li>Hi Username</li>
+            <li>edit page</li>
+            <li><a href="info.html" target="_parent">Info</a></li>
+            <li><a href="schedule.html" target="_parent">Schedule</a></li>
+            <li><a href="chat.html" target="_parent">Chat</a></li>
+            <li><a href="docs.html" target="_parent">Documents</a></li>
+            <li><button id="logoutBtn">logout</button></li>
+        </ul>
+    </nav><!--Menu end-->
+    <main>
+    <section>
+        <h2 class="accordion">Create new chat</h2>
+        <ul class="panel">
+           <li class="panelSubheader">1st Semester</li>
+            <li>
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Simon Erasmus Johansen</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>1st Semester</span>
+            </li>
+            <li class="panelLastList">
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Luiza de Sá</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>1st Semester</span>
+            </li>
+            <li class="panelSubheader">2st Semester</li>
+            <li>
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Simon Erasmus Johansen</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>2st Semester</span>
+            </li>
+            <li>
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Luiza de Sá</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>2st Semester</span>
+            </li>
+            <li class="panelSubheader">3st Semester</li>
+            <li>
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Simon Erasmus Johansen</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>3st Semester</span>
+            </li>
+            <li>
+                <div class="profileThump">
+                    <img src="/kea-network/img/Old-man.jpg" alt="profile picture of Simon Erasmus Johansen" />
+                </div>
+                <p>Luiza de Sá</p>
+                <div class="email"></div>
+                <div class="chat"></div>
+                <span>MMD</span><span>3st Semester</span>
+            </li>
+        </ul>
+
+    </section>
+    <!--Section Create new Chat / Members list-->
+        <!--Section filter members-->
+            <!--filter education DD menu + filter btn-->
+            <!--filter reset button + special designed filters-->
+
+        <!--Section 1st semester-->
+            <!--profile img + name + classname + start chat + start email-->
+
+        <!--Section 2st semester-->
+            <!--profile img + name + classname + start chat + start email-->
+
+        <!--Section 3st semester-->
+        <!--Section 4st semester-->
+        <!--Section teachers-->
+
+    <!--active chats / group -->
+        <!--three most active-->
+        <!--see all btn / See less btn-->
+
+    <!--active chats / group -->
+        <!--three most active-->
+        <!--see all btn / See less btn-->
+
+    <!--active chats / group -->
+        <!--three most active-->
+        <!--see all btn / See less btn-->
+
+
+
+    </main>
+    <script>
+    // accordion / Members list / Chats
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+        </script>
+    <script src="/kea-network/js/javascript.js"></script>
+</body>
+
+</html>
